@@ -1,6 +1,6 @@
 #!name=Tool
 #!desc=一些自由插件
-#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hijacking.png
 
 [Mitm]
 hostname = account.wps.cn, api.coolapk.com, weixin110.qq.com, security.wechat.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com,
