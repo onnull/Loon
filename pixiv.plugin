@@ -6,5 +6,5 @@
 hostname = oauth.secure.pixiv.net
 [Script]
 
-http-response ^https?:\/\/oauth\.secure\.pixiv\.net\/(auth\/token) script-path=script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/pixivpro.js, requires-body=true, tag=pixiv去广告
+http-response ^https?:\/\/oauth\.secure\.pixiv\.net\/(auth\/token) script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/pixivpro.js, requires-body=true, tag=pixiv去广告
 
