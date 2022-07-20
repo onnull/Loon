@@ -1,0 +1,10 @@
+#!name=pixiv去广告
+#!desc=pixiv去广告，来自墨鱼https://github.com/ddgksf2013
+
+[Mitm]
+
+hostname = oauth.secure.pixiv.net
+[Script]
+
+http-response ^https?:\/\/oauth\.secure\.pixiv\.net\/(auth\/token) script-path=script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/pixivpro.js, requires-body=true, tag=pixiv去广告
+
