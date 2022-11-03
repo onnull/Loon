@@ -1,9 +1,12 @@
-#!name=NoadsKA
-#!desc=酷安去广告
+#!name=酷安去广告
+#!desc=酷安去首页广告、信息流广告、评论广告
+#!author=onnull
+#!homepage=https://github.com/onnull/Loon
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
 
 [Mitm]
 hostname = api.coolapk.com
-[Script]
 
+[Script]
 #酷安去广告
-http-response ^https?:\/\/api.coolapk.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList) script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/coolapk.js, requires-body=true, tag=酷安去广告
+http-response ^https?:\/\/api.coolapk.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList) script-path=https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/coolapk.js, requires-body=true, tag=酷安去广告
