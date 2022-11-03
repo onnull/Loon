@@ -2,7 +2,7 @@
 #!desc=酷安去首页广告、信息流广告、评论广告
 #!author=onnull
 #!homepage=https://github.com/onnull/Loon
-#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/rq.png
 
 [Mitm]
 hostname = api.coolapk.com
