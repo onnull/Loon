@@ -1,0 +1,5 @@
+[Script]
+http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_startup_direct.js, requires-body=true, tag=bilibili启动直连
+
+[MITM]
+hostname = api.bilibili.com
