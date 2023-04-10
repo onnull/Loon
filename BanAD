@@ -1,0 +1,21 @@
+#!name=常用去广告
+#!desc=去除酷安、12306广告
+#!author=onnull
+#!homepage=https://github.com/onnull/Loon
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png
+
+[Script]
+#酷安
+http-response ^https?:\/\/api.coolapk.com\/v6\/dataList script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, tag=去酷安推广广告
+http-response ^https?:\/\/api.coolapk.com\/v6\/main\/indexV8 script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, tag=去酷安首页广告
+http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/replyList script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, tag=去酷安评论广告
+http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/detail script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, tag=去商品推广广告
+
+#12306
+http-request ^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList script-path=https://cdn.jsdelivr.net/gh/keywos/rule@master/JS/12306.js, requires-body=true, timeout=10, tag=12306
+
+[Rewrite]
+^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch reject-dict
+
+[MITM]
+hostname = api.coolapk.com, ad.12306.cn
