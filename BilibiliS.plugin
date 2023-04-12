@@ -1,5 +1,12 @@
-[Script]
-http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_startup_direct.js, requires-body=true, tag=bilibili启动直连
+#!name=BiliBiliCC
+#!desc=哔哩哔哩字幕繁转简
+#!author=onnull
+#!homepage=https://github.com/onnull/Loon
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
 
-[MITM]
-hostname = api.bilibili.com
+[Mitm]
+hostname = aisubtitle.hdslb.com
+
+[Script]
+
+http-response ^https?:\/\/aisubtitle\.hdslb\.com\/bfs\/subtitle\/.+\.json script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_cc.js, requires-body=true, tag=哔哩哔哩字幕
