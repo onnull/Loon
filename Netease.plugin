@@ -18,7 +18,7 @@
 ^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/comment\/hotcomment\/collect reject-dict
 ^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/resource-exposure\/activity\/config reject-dict
 ^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/vipcenter/tspopup\/get reject-dict
-
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/search\/chart reject-dict
 
 [MITM]
 hostname = interface*.music.163.com  
