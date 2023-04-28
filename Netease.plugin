@@ -1,0 +1,24 @@
+#!name = 网易云音乐去广告
+#!desc = 过滤网易云音乐广告
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/NeteaseCloudMusic.png
+[Rewrite]
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api/homepage/daily/song/elf/notice reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/ad\/ reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/sp\/flow reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/ios\/upgrade reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/link\/position\/show\/resource reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?eapi\/resource-exposure\/config reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/search\/specialkeyword reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/link\/scene\/show\/resource reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/search\/default reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/comment\/feed\/inserted reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/v1\/content\/exposure\/comment reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/search\/rcmd\/keyword reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/search\/default\/keyword reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/comment\/hotcomment\/collect reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/resource-exposure\/activity\/config reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/vipcenter/tspopup\/get reject-dict
+
+
+[MITM]
+hostname = interface*.music.163.com  
