@@ -1,8 +1,5 @@
 #!name = 网易云会员
 #!desc = 解锁网易云会员
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/NeteaseCloudMusic.png
-
-
 
 [Rewrite]
 ^https?:\/\/.*\/api\/clientlog\/encrypt\/upload reject-array
